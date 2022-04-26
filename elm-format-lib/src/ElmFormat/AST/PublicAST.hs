@@ -10,4 +10,4 @@ import ElmFormat.AST.PublicAST.Core (ToPublicAST(..), FromPublicAST(..), Located
 import ElmFormat.AST.PublicAST.Config
 import ElmFormat.AST.PublicAST.Module (fromModule, toModule, Module(..), TopLevelStructure(..))
 import ElmFormat.AST.PublicAST.MaybeF
-import ElmFormat.Ast.PublicAst.Expression
+import ElmFormat.AST.PublicAST.Expression
