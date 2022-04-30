@@ -120,7 +120,7 @@ instance FromJSONKey ModuleName where
 
 newtype VariableDefinition
     = VariableDefinition
-        { name :: LowercaseIdentifier
+        { varName :: LowercaseIdentifier
         }
 
 instance ToJSON VariableDefinition where
