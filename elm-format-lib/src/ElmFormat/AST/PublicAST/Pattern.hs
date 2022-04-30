@@ -16,22 +16,22 @@ data Pattern
     | LiteralPattern LiteralValue
     | VariablePattern VariableDefinition
     | DataPattern
-        { constructor :: Reference
-        , arguments :: List (LocatedIfRequested Pattern) -- Non-empty
+        { patConstructor :: Reference
+        , patArguments :: List (LocatedIfRequested Pattern) -- Non-empty
         }
     | TuplePattern
-        { terms :: List (LocatedIfRequested Pattern) -- At least two items
+        { patTerms :: List (LocatedIfRequested Pattern) -- At least two items
         }
     | ListPattern -- Construct with mkListPattern
-        { prefix :: List (LocatedIfRequested Pattern)
-        , rest :: Maybe (LocatedIfRequested Pattern) -- Must not be a ListPattern
+        { patPrefix :: List (LocatedIfRequested Pattern)
+        , patRest :: Maybe (LocatedIfRequested Pattern) -- Must not be a ListPattern
         }
     | RecordPattern
-        { fields :: List VariableDefinition
+        { patFields :: List VariableDefinition
         }
     | PatternAlias
-        { alias :: VariableDefinition
-        , pattern :: LocatedIfRequested Pattern
+        { patAlias :: VariableDefinition
+        , patPattern :: LocatedIfRequested Pattern
         }
 
 mkListPattern :: List (LocatedIfRequested Pattern) -> Maybe (LocatedIfRequested Pattern) -> Pattern
