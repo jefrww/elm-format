@@ -5,6 +5,7 @@ module ElmFormat.AST.PublicAST
     , module ElmFormat.AST.PublicAST.MaybeF
     , module ElmFormat.AST.PublicAST.Expression
     , module ElmFormat.AST.PublicAST.Type
+    , module ElmFormat.AST.PublicAST.Reference
     ) where
 
 import ElmFormat.AST.PublicAST.Core (ToPublicAST(..), FromPublicAST(..), LocatedIfRequested(..))
@@ -13,3 +14,4 @@ import ElmFormat.AST.PublicAST.Module (fromModule, toModule, Module(..), TopLeve
 import ElmFormat.AST.PublicAST.MaybeF
 import ElmFormat.AST.PublicAST.Expression
 import ElmFormat.AST.PublicAST.Type
+import ElmFormat.AST.PublicAST.Reference
