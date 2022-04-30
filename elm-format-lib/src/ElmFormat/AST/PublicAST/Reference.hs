@@ -5,11 +5,11 @@ import ElmFormat.AST.PublicAST.Core
 
 data Reference
     = ExternalReference
-        { module_ :: ModuleName
-        , identifier :: Ref ()
+        { refModule_ :: ModuleName
+        , refIdentifier :: Ref ()
         }
     | VariableReference
-        { name :: Ref ()
+        { refName :: Ref ()
         }
 
 mkReference :: Ref [UppercaseIdentifier] -> Reference
