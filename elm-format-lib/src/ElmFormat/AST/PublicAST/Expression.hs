@@ -4,7 +4,7 @@
 {-# LANGUAGE TupleSections #-}
 {-# LANGUAGE DuplicateRecordFields #-}
 {-# OPTIONS_GHC -Wno-orphans #-}
-module ElmFormat.AST.PublicAST.Expression (Expression(..), Definition(..), DefinitionBuilder, TypedParameter(..), LetDeclaration(..), mkDefinitions, fromDefinition) where
+module ElmFormat.AST.PublicAST.Expression (Expression(..), Definition(..), DefinitionBuilder, TypedParameter(..), LetDeclaration(..), CaseBranch(..), mkDefinitions, fromDefinition) where
 
 import ElmFormat.AST.PublicAST.Core
 import ElmFormat.AST.PublicAST.Reference
