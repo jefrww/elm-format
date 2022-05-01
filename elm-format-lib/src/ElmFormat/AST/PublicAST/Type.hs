@@ -223,7 +223,7 @@ instance FromJSON Type_ where
 
 data CustomTypeVariant
     = CustomTypeVariant
-        { name :: UppercaseIdentifier
+        { ctName :: UppercaseIdentifier
         , parameterTypes :: List (LocatedIfRequested Type_)
         }
     deriving (Generic)
