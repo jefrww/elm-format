@@ -59,6 +59,9 @@ elm0_19 =
         -- From https://github.com/elm/parser/blob/1.1.0/src/Parser.elm#L55-L59
         , ( "|=", 5, LeftAssociate )
         , ( "|.", 6, LeftAssociate )
+
+        -- Bugfix
+        , ( "=>", 6, NonAssociate)
         ]
 
 parseElm0_19 :: (Ord ns, Show ns) => e -> List (Ref ns, e) -> Either Text (Tree (Ref ns) e)
